@@ -1,0 +1,2 @@
+# themx
+WordPress Theme Boilerplate
