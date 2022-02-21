@@ -1,0 +1,9 @@
+----- 1.0.1 ( January 13, 2021) -----
+New: New page added
+Fixed: Some fixes applied
+Tweaked: Some little changes/updates made
+
+----- 1.0.0 ( January 01, 2021) -----
+Initial Release
+
+//TODO: add changelogs with the theme. First version can be empty.
