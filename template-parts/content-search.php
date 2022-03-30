@@ -10,26 +10,23 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+	<header class="theme-header">
+		<?php the_title( sprintf( '<h2 class="theme-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-			themx_posted_on();
-			themx_posted_by();
-			?>
-		</div><!-- .entry-meta -->
+		<div class="theme-meta">
+
+		</div><!-- .theme-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</header><!-- .theme-header -->
 
-	<?php themx_post_thumbnail(); ?>
+	<?php the_post_thumbnail(); ?>
 
-	<div class="entry-summary">
+	<div class="theme-summary">
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	</div><!-- .theme-summary -->
 
-	<footer class="entry-footer">
+	<footer class="theme-footer">
 		<?php themx_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</footer><!-- .theme-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
